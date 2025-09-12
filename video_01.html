@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Redirigiendo al video</title>
+
+  <!-- Redirección inmediata -->
+  <meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=jAGetSjqiEg">
+
+  <!-- Mejora SEO / redes -->
+  <link rel="canonical" href="https://www.youtube.com/watch?v=jAGetSjqiEg">
+  <meta property="og:title" content="Video">
+  <meta property="og:description" content="Redirigiendo al video">
+  <meta property="og:url" content="https://www.youtube.com/watch?v=jAGetSjqiEg">
+</head>
+<body>
+  <p>Redirigiendo al video... Si no te lleva automáticamente, haz clic en el enlace: 
+    <a href="https://www.youtube.com/watch?v=jAGetSjqiEg">Ver el video en YouTube</a>
+  </p>
+
+  <!-- JavaScript fallback (por si el meta-refresh no funciona) -->
+  <script>
+    (function() {
+      var dest = 'https://www.youtube.com/watch?v=jAGetSjqiEg';
+      // intenta redirigir inmediatamente
+      try { window.location.replace(dest); } catch (e) { window.location.href = dest; }
+    })();
+  </script>
+</body>
+</html>
